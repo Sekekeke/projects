@@ -6,7 +6,7 @@
 //Нужен для srand
 #include<cstdlib>
 
-#include "game.h"
+//#include "game.h"
 
 void do_colors();
 
@@ -21,9 +21,9 @@ int main(){
     do_colors();
 
     rand();
-    game g;
+    //game g;
     
-    while (!g.do_turn());
+    //while (!g.do_turn());
     
     erase();
     getch();
