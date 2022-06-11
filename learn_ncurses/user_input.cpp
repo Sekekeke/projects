@@ -28,11 +28,13 @@ int main(){
     wrefresh(w_display);
     wrefresh(w_console);
     
+    //подрубаем спец клавиши, стрелки, эф-ки и тд
     keypad(w_console, true);
     
     echo();   
     wmove(w_console, 1, 1);
-    
+
+    //Ввод из окна   
     int c = wgetch(w_console);
     noecho();
     if (c = KEY_ENTER) {
